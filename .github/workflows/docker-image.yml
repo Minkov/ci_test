@@ -22,7 +22,6 @@ jobs:
         file: Dockerfile
         tags: latest
         push: true
-        platforms: linux/amd64,linux/arm64,linux/386
         secrets: |
           GIT_AUTH_TOKEN=${{ github.token }}
 # run: docker build . --file Dockerfile --tag ci_test:$(date +%s)
