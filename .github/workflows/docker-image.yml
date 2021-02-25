@@ -21,7 +21,7 @@ jobs:
         context: .
         registry: ghcr.io
         file: Dockerfile
-        tags: latest
+        tags: ghcr.io/minkov/ci_test:latest
         push: true
         secrets: |
           GIT_AUTH_TOKEN=${{ github.token }}
