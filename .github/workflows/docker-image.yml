@@ -19,6 +19,7 @@ jobs:
     - uses: docker/build-push-action@v2
       with:
         context: .
+        registry: ghcr.io
         file: Dockerfile
         tags: latest
         push: true
